@@ -15,7 +15,7 @@ function Hero() {
 					height={300}
 				/>
 			</div>
-			<h1 className="mt-4 text-gray-300 text-7xl">Hi! I'm Nayeem!</h1>
+			<h1 className="mt-4 text-gray-300 text-xl">Hi! I'm Nayeem!</h1>
 			<p className="text-gray-200 mx-auto w-4/5">
 				Welcome to my blog! I'm a js/nodeJs developer.
 			</p>
