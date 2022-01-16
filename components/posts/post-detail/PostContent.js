@@ -1,6 +1,8 @@
 import PostHeader from "./PostHeader";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import { Prism } from "react-syntax-highlighter";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism"; // Remark: cjs for server side not esm!
 
 function PostContent(props) {
 	const { post } = props;
@@ -25,6 +27,15 @@ function PostContent(props) {
 				);
 			}
 			return <p>{children}</p>;
+		},
+		code: (props) => {
+			return (
+				<Prism
+					style={atomDark}
+					language={props.className.replace("language-", "")}
+					children={props.children}
+				/>
+			);
 		}
 	};
 

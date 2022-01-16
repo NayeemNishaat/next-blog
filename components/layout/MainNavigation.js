@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 function MainNavigation() {
 	return (
-		<header className="w-full h-24 bg-gray-900 flex justify-between items-center px-10">
+		<header className="w-full h-[15vh] bg-gray-900 flex justify-between items-center px-10">
 			<Link href="/">
 				{/* If no plain text is inserted between Link component then no anchor tag will be inserted. So, we need our own anchor tag! */}
 				<a className="text-gray-100 hover:text-gray-200 transition text-xl md:text-2xl">
