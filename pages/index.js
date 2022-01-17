@@ -32,3 +32,5 @@ export function getStaticProps() {
 }
 
 export default HomePage;
+
+// Note: For generating a static site, make sure no server side code (page revalidation/no fallback/no server side props/no image optimization/no dynamic paths). Then 1st run "npm run build" then run "npm run export". Then you will get a folder "out" which contains the desired static site.
