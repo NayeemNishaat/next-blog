@@ -29,7 +29,7 @@ async function handler(req, res) {
 		let client;
 		try {
 			client = await MongoClient.connect(
-				"mongodb+srv://Nayeem:VAfiGViTHlBWDCPg@laby.il75o.mongodb.net/blog?retryWrites=true&w=majority"
+				`mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.il75o.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`
 			);
 		} catch (err) {
 			client.close();
